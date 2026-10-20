@@ -62,7 +62,7 @@ be decorative. There is a test for exactly this.
 ## Install
 
 ```bash
-git clone https://github.com/Sunyiad/agent-guardrails.git
+git clone https://github.com/sajjad-rabby/agent-guardrails.git
 cd agent-guardrails
 python examples/demo_end_to_end.py      # no install, no API key
 ```
