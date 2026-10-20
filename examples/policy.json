@@ -1,0 +1,34 @@
+{
+  "rules": [
+    {
+      "name": "safe-arithmetic",
+      "tool": "calculator",
+      "effect": "allow",
+      "reason": "plain arithmetic expression within length and character limits",
+      "conditions": [
+        { "arg": "expression", "operator": "matches", "value": "^[0-9+\\-*/(). ]{1,64}$" }
+      ]
+    },
+    {
+      "name": "no-shell-metacharacters",
+      "tool": "calculator",
+      "effect": "deny",
+      "reason": "expression contains characters outside the arithmetic allowlist",
+      "conditions": []
+    },
+    {
+      "name": "read-file-requires-approval",
+      "tool": "read_file",
+      "effect": "allow",
+      "reason": "reading is allowed but sensitive paths need operator approval",
+      "conditions": []
+    },
+    {
+      "name": "no-write-outside-workspace",
+      "tool": "write_file",
+      "effect": "deny",
+      "reason": "writes are only permitted inside the declared workspace root",
+      "conditions": []
+    }
+  ]
+}

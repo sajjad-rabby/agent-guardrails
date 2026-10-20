@@ -1,0 +1,4 @@
+[
+  "{\"tool\": \"calculator\", \"args\": {\"expression\": \"__import__(\\\"os\\\").system(\\\"whoami\\\")\"}}",
+  "{\"final\": \"That expression is not on the arithmetic allowlist, so it was blocked.\"}"
+]
